@@ -1,9 +1,37 @@
 body {
+    font-family: Arial, sans-serif; /* Set a clean font for readability */
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333; /* Dark gray text */
     display: flex;
     flex-direction: column;
 }
 
+header {
+    background-color: #007bff; /* Blue background for the header */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+   list-style-type: none; /* Remove bullets from list */
+   padding: 0; /* Remove default padding */
+   margin: 0; /* Remove default margin */
+   display: flex; /* Align items in a row */ 
+}
+
+header li {
+    margin-right: 15px; /* Space between items */
+    color: white; /* White text color */
+}
+
+.logo {
+    font-size: 24px; /* Make the logo character larger */
+    margin-right: 20px; /* Space between logo and menu items */
+}
+
 main {
+    background-color: #f9f9f9; /* Slightly darker background */
     display: flex;
     flex-direction: row;
     flex: auto; /* Keeps automatic height and width */
