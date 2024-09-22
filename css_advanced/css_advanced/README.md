@@ -16,9 +16,3 @@ To get started, simply download the repository and open `index.html` in your web
 
 - A modern web browser (Chrome, Firefox, Safari, etc.)
 
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/smile-school.git
-   cd smile-school
