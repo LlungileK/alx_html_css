@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #F0F0F0;
+}
+
+/* Header Section */
+header {
+    background-image: url('background.png'); /* Replace with the correct image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 20px; /* Space between heading and CTA button */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header .cta-button {
+    display: inline-block;
+    background-color: #ff4f5a;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-bottom: 40px; /* Increased space between CTA button and paragraph */
+    margin-top: 20px; /* Add margin if needed between header text and button */
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px; /* Limits width for readability */
+    margin: 0 auto; /* Centers the paragraph horizontally */
+    margin-top: 40px; /* Space between the button and the paragraph */
+    position: relative;
+    z-index: 2;
+    color: white; /* Adjust color if needed */
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: transparent;
+    z-index: 100;
+}
+
+header .logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F75858;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('background.png'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 150px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+header .cta-button {
+    display: inline-block;
+    background-color: #ff4f5a;
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    margin-bottom: 30px; /* Space between the button and the text below */
+    position: relative;
+    z-index: 2;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 30px; /* Space between CTA button and paragraph text */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Optional: dark overlay for readability */
+    z-index: 0;
+}
+.hero .cta-button {
+    background-color: #F75858;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.hero .cta-button:hover {
+    background-color: #E64545;
+}
+
+/* What We Do Section */
+
+.what-we-do {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFFFFF
+}
+
+.what-we-do h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.service {
+    text-align: center;
+    flex-basis: 20%;
+}
+
+.service img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Results Section */
+.results {
+    background-color: #0A0E17;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+.results h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.result-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.result-item {
+    background-color: #F75858;
+    padding: 30px;
+    width: 150px;
+    border-radius: 10px;
+    color: white;
+}
+
+.result-item span {
+    font-size: 30px;
+    display: block;
+    color: white;
+}
+
+/* Contact Us Section */
+.contact {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FFFFFF;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: inline-block;
+    width: 300px;
+    tet-align: left;
+}
+
+.contact input, 
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact button {
+    background-color: #F75858;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.contact button:hover {
+    background-color: #E64545;
+}
+
+/* Footer Section */
+footer {
+    background-image: url('footer_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+footer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0 0.6);
+    z-index: 0;
+}
+
+footer p {
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons {
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(100%);
+}
